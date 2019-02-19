@@ -122,24 +122,31 @@ body {
 .card {
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,.125);
-  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,.125);  
   padding: 1.25rem;
   position: relative;
+  z-index: 2;
 }
 
 .card_actions {
   align-items: center;
   background-color: #b6b7bb;
   border-radius: 50%;
+  box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
   display: flex;
   height: 30px;
   justify-content: center;
+  padding: 15px;
   position: absolute;
   right: 1.25rem;
   top: 1.25rem;
   width: 30px;
+}
+
+.lead {
+  margin-bottom: 20px;
 }
 
 .lead_avatar {
@@ -154,9 +161,11 @@ body {
 }
 
 .lead_avatar_text {
-  color: #fff;  
+  color: #fff;
+  cursor: default;
   font-size: 26px;
   font-weight: 700;
+  user-select: none;
 }
 
 .lead_name {
@@ -214,8 +223,20 @@ body {
 .lead_contact_icon {
   background: url('../images/icons-sprite.png') no-repeat;
   height: 40px;
+  position: relative;
   margin: 0 10px;
   width: 48px;
+}
+
+.lead_contact_icon > a {
+  display: block;
+  height: 100%;
+  position: absolute;  
+  width: 100%;
+}
+
+.lead_contact_icon > a > span {
+  display: none;
 }
 
 .lead_contact_email {
@@ -230,8 +251,19 @@ body {
   background-position: -1px -86px;
 }
 
+.lead_info {
+  display: none;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.show .lead_info {
+  display: block;
+}
+
 .footer {
   background-color: #343434;
+  position: relative;
 }
 
 .footer_nav {
@@ -242,9 +274,24 @@ body {
   width: 90%;  
 }
 
+.footer_nav:after {
+  background-color: #a0a0a0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
 .footer_nav_item {  
   padding: 10px 20px 5px;
   text-align: center;
+}
+
+.footer_nav_link {
+  color: transparent;
+  display: block;
 }
 
 .footer_nav_item_icon {
@@ -270,7 +317,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 8px 0;
   width: 90%;
 }
 
