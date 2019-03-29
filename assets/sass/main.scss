@@ -1,2 +1,14 @@
-@import 'layout/header';
-@import 'layout/footer';
+@import 
+  'base/base',
+  'base/reset',
+  'base/fonts',
+  'base/typography';
+
+@import
+  'components/badges',
+  'components/leads';
+
+@import 
+  'layout/grid',
+  'layout/header',
+  'layout/footer';
