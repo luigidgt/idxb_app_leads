@@ -2,11 +2,12 @@
   background: #f6f6f6;
   min-height: 100vh;
   margin: 0 auto;
-  max-width: 540px;
+  position: relative;
+  max-width: 540px;  
 }
 
 .main {
-  padding: 20px 0;
+  padding: 20px 0 80px;
 }
 
 .main_wrapper {

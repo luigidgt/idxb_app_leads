@@ -2,8 +2,9 @@
   background-color: #343434;
   bottom: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
 .footer_nav {

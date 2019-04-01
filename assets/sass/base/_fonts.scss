@@ -23,29 +23,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ico-settings:before {
+.icon-settings:before {
   content: "\e900";
 }
-.ico-sort:before {
-  content: "\e902";
-}
-.ico-rockect .path1:before {
-  content: "\e903";
-}
-.ico-rockect .path2:before {
-  content: "\e904";
-  margin-left: -1em;
-}
-.ico-rockect .path3:before {
-  content: "\e905";
-  margin-left: -1em;
-}
-.ico-search-bold:before {
+.icon-search-bold:before {
   content: "\e901";
 }
-.ico-plus:before {
+.icon-sort:before {
+  content: "\e902";
+}
+.icon-rockect-path2:before {
+  content: "\e904";
+}
+.icon-rockect-path3:before {
+  content: "\e905";
+}
+.icon-rockect-path1:before {
+  content: "\e903";
+}
+.icon-plus:before {
   content: "\ea0a";
 }
-.ico-minus:before {
+.icon-minus:before {
   content: "\ea0b";
+}
+.icon-arrow-down:before {
+  content: "\e907";
 }
