@@ -1,0 +1,25 @@
+/* LOGIN */
+
+.login_wrapper  {
+  background-color: #fff;
+}
+
+.login_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.logo-site {
+  margin: 0 auto;
+}
+
+.login_footer {
+  text-align: center;
+}
